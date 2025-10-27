@@ -1056,7 +1056,7 @@ jobs:
         run: |
           echo "::add-matcher::.github/workflows/matchers/pytest-slow.json"
       - name: Download pytest_buckets
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           name: pytest_buckets
       - name: Compile English translations
@@ -1450,7 +1450,7 @@ jobs:
       - name: Check out code from GitHub
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - name: Download all coverage artifacts
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           pattern: coverage-*
       - name: Upload coverage to Codecov
@@ -1614,7 +1614,7 @@ jobs:
       - name: Check out code from GitHub
         uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - name: Download all coverage artifacts
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           pattern: coverage-*
       - name: Upload coverage to Codecov
@@ -1639,7 +1639,7 @@ jobs:
     timeout-minutes: 10
     steps:
       - name: Download all coverage artifacts
-        uses: actions/download-artifact@634f93cb2916e3fdff6788551b99b062d0335ce0 # v5.0.0
+        uses: actions/download-artifact@018cc2cf5baa6db3ef3c5f8a56943fffe632ef53 # v6.0.0
         with:
           pattern: test-results-*
       - name: Upload test results to Codecov
